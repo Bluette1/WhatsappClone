@@ -7,11 +7,14 @@ import { NavigationContainer, DefaultTheme, DarkTheme } from '@react-navigation/
 import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
 import { ColorSchemeName } from 'react-native';
+import { View } from '../components/Themed';
+import colors from '../constants/Colors'
 
 import NotFoundScreen from '../screens/NotFoundScreen';
 import { RootStackParamList } from '../types';
 import BottomTabNavigator from './BottomTabNavigator';
 import LinkingConfiguration from './LinkingConfiguration';
+import { MaterialCommunityIcons, Octicons } from '@expo/vector-icons';
 
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName }) {
   return (
@@ -29,8 +32,36 @@ const Stack = createStackNavigator<RootStackParamList>();
 
 function RootNavigator() {
   return (
-    <Stack.Navigator screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="Root" component={BottomTabNavigator} />
+    <Stack.Navigator screenOptions={{
+      headerStyle: {
+        backgroundColor: colors.light.tint,
+      },
+      headerTintColor: colors.light.background,
+      headerTitleAlign: 'left',
+      headerTitleStyle: {
+        fontWeight: 'bold'
+      }
+
+    }}>
+      <
+        Stack.Screen name="Root"
+        component={BottomTabNavigator}
+        options={{
+          title: 'Whatsapp',
+          headerRight: () => (
+            <View style={{
+              backgroundColor: colors.light.tint,
+              flexDirection: 'row',
+              width: 60,
+              justifyContent: 'space-between',
+              marginRight: 10,
+            }}>
+              <Octicons name="search" size={22} color={'white'}></Octicons>
+              <MaterialCommunityIcons name="dots-vertical" size={22} color={'white'}></MaterialCommunityIcons>
+            </View>
+          )
+        }}
+      />
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
     </Stack.Navigator>
   );
