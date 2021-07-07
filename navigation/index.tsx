@@ -12,7 +12,7 @@ import colors from '../constants/Colors'
 
 import NotFoundScreen from '../screens/NotFoundScreen';
 import { RootStackParamList } from '../types';
-import BottomTabNavigator from './BottomTabNavigator';
+import BottomTabNavigator from './MainTabNavigator';
 import LinkingConfiguration from './LinkingConfiguration';
 import { MaterialCommunityIcons, Octicons } from '@expo/vector-icons';
 
@@ -35,6 +35,8 @@ function RootNavigator() {
     <Stack.Navigator screenOptions={{
       headerStyle: {
         backgroundColor: colors.light.tint,
+        shadowOpacity: 0,
+        elevation:0,
       },
       headerTintColor: colors.light.background,
       headerTitleAlign: 'left',
