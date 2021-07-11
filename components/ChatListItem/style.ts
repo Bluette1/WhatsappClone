@@ -6,13 +6,16 @@ import {StyleSheet} from 'react-native';
      justifyContent: 'space-between',
      padding: 10
    },
+   midContainer: {
+     justifyContent: 'space-around',
+   },
    leftContainer: {
     flexDirection: 'row',
   },
   avatar: {
     width: 60,
     height: 60,
-    marginRight: 10,
+    marginRight: 15,
     borderRadius: 50,
   },
   username: {
@@ -21,7 +24,11 @@ import {StyleSheet} from 'react-native';
   },
   lastMessage: {
     fontSize: 16,
-    color: 'grey'
-  }
+    color: 'grey',
+  },
+  time: {
+    fontSize: 16,
+    color: 'grey',
+  },
  });
  export default styles;
