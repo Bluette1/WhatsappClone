@@ -12,7 +12,7 @@ export default [{
   lastMessage: {
     id: 'm1',
     content: 'Well done this sprint, guys!',
-    createdAt: '2020-10-03T14:48:00.000Z',
+    createdAt: '2021-10-03T14:48:00.000Z',
   }
 }, {
   id: '2',
@@ -28,7 +28,7 @@ export default [{
   lastMessage: {
     id: 'm2',
     content: 'How are you doing?',
-    createdAt: '2020-10-02T15:40:00.000Z',
+    createdAt: '2021-10-02T15:40:00.000Z',
   }
 }, {
   id: '3',
@@ -44,7 +44,7 @@ export default [{
   lastMessage: {
     id: 'm3',
     content: 'Hi, Lucia.',
-    createdAt: '2020-10-02T14:48:00.000Z',
+    createdAt: '2021-10-02T14:48:00.000Z',
   }
 }, {
   id: '4',
@@ -60,7 +60,7 @@ export default [{
   lastMessage: {
     id: 'm4',
     content: 'Can you review',
-    createdAt: '2020-09-29T14:48:00.000Z',
+    createdAt: '2021-06-29T14:48:00.000Z',
   }
 }, {
   id: '5',
@@ -71,12 +71,12 @@ export default [{
   }, {
     id: 'u6',
     name: 'Fusil Major',
-    imageUri: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHVzZXJzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    imageUri: 'https://images.unsplash.com/photo-1472069645785-5658abf4ff4e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHVzZXJzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
   }],
   lastMessage: {
     id: 'm5',
     content: 'I would be happy',
-    createdAt: '2020-09-30T14:48:00.000Z',
+    createdAt: '2021-06-30T14:48:00.000Z',
   }
 }, {
   id: '6',
@@ -92,7 +92,7 @@ export default [{
   lastMessage: {
     id: 'm6',
     content: 'I have a solution',
-    createdAt: '2020-10-02T15:40:00.000Z',
+    createdAt: '2021-10-02T15:40:00.000Z',
   }
 }, {
   id: '7',
@@ -103,12 +103,12 @@ export default [{
   }, {
     id: 'u8',
     name: 'Bree',
-    imageUri: 'https://images.unsplash.com/photo-1509668521827-dd7d42a587e2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fHVzZXJzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    imageUri: 'https://images.unsplash.com/photo-1506668521827-dd7d42a587e2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fHVzZXJzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
   }],
   lastMessage: {
     id: 'm7',
     content: 'How are you doing?',
-    createdAt: '2020-10-02T15:40:00.000Z',
+    createdAt: '2021-10-02T15:40:00.000Z',
   }
 }, {
   id: '8',
@@ -124,7 +124,7 @@ export default [{
   lastMessage: {
     id: 'm8',
     content: 'Dear, did you eat?',
-    createdAt: '2020-09-27T15:40:00.000Z',
+    createdAt: '2021-06-27T15:40:00.000Z',
   }
 }, {
   id: '9',
@@ -140,6 +140,6 @@ export default [{
   lastMessage: {
     id: 'm9',
     content: 'Meet me at the same place',
-    createdAt: '2020-09-25T15:40:00.000Z',
+    createdAt: '2021-06-25T15:40:00.000Z',
   },
 }]
