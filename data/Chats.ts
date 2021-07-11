@@ -13,11 +13,11 @@ export default {
 	}],
 	messages: [{
 		id: 'm1',
-		content: 'How are you, Lukas!',
+		content: 'How are you, Lucia!',
 		createdAt: '2020-10-10T12:48:00.000Z',
 		user: {
 			id: 'u1',
-			name: 'Vadim',
+			name: 'Mary',
 		},
 	}, {
 		id: 'm2',
@@ -25,7 +25,7 @@ export default {
 		createdAt: '2020-10-03T14:49:00.000Z',
 		user: {
 			id: 'u2',
-			name: 'Lukas',
+			name: 'Lucia',
 		},
 	}, {
 		id: 'm3',
@@ -33,7 +33,7 @@ export default {
 		createdAt: '2020-10-03T14:49:40.000Z',
 		user: {
 			id: 'u2',
-			name: 'Lukas',
+			name: 'Lucia',
 		},
 	}, {
 		id: 'm4',
@@ -41,7 +41,7 @@ export default {
 		createdAt: '2020-10-03T14:50:00.000Z',
 		user: {
 			id: 'u1',
-			name: 'Vadim',
+			name: 'Mary',
 		},
 	}, {
 		id: 'm5',
@@ -49,7 +49,7 @@ export default {
 		createdAt: '2020-10-03T14:51:00.000Z',
 		user: {
 			id: 'u1',
-			name: 'Vadim',
+			name: 'Mary',
 		},
 	}, {
 		id: 'm6',
@@ -57,7 +57,7 @@ export default {
 		createdAt: '2020-10-03T14:49:00.000Z',
 		user: {
 			id: 'u2',
-			name: 'Lukas',
+			name: 'Lucia',
 		},
 	}, {
 		id: 'm7',
@@ -65,7 +65,7 @@ export default {
 		createdAt: '2020-10-03T14:53:00.000Z',
 		user: {
 			id: 'u1',
-			name: 'Vadim',
+			name: 'Lucia',
 		},
 	}]
 }

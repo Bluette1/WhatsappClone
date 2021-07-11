@@ -27,7 +27,7 @@ import {StyleSheet} from 'react-native';
     color: 'grey',
   },
   time: {
-    fontSize: 16,
+    fontSize: 14,
     color: 'grey',
   },
  });
