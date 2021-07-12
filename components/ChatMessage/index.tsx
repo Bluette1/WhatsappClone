@@ -2,6 +2,7 @@ import React from 'react';
 import { Message } from '../../types'
 import { Text, View } from 'react-native';
 import moment from 'moment';
+import styles from './styles';
 
 export type ChatMessageProps = {
   message: Message
@@ -9,13 +10,25 @@ export type ChatMessageProps = {
 
 const ChatMessage = (props: ChatMessageProps) => {
   const { message } = props
+  const isMyMessage = () => {
+    return message.user.id == 'u1';
+  }
 
   return (
-    <View>
-      <Text>{message.user.name}</Text>
-      <Text>{message.content}</Text>
-      <Text>{moment(message.createdAt).fromNow()}</Text>
+    <View style={styles.container}>
+      <View style={[styles.messageBox,
+      {
+        backgroundColor: isMyMessage() ? '#DCF8C5' : 'white',
+        marginLeft: isMyMessage() ? 0 : 50,
+        marginRight: isMyMessage() ? 50 : 0,
+      }
+      ]}>
+        {!isMyMessage() && <Text style={styles.name}>{message.user.name}</Text>}
+        <Text style={styles.message}>{message.content}</Text>
+        <Text style={styles.time}>{moment(message.createdAt).fromNow()}</Text>
+      </View>
     </View>
+
   )
 
 }
