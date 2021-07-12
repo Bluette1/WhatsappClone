@@ -16,6 +16,7 @@ import BottomTabNavigator from './MainTabNavigator';
 import LinkingConfiguration from './LinkingConfiguration';
 import { MaterialCommunityIcons, MaterialIcons, Octicons, FontAwesome5 } from '@expo/vector-icons';
 import ChatRoomScreen from '../screens/ChatRoomScreen'
+import ContactsScreen from '../screens/ContactsScreen'
 
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName }) {
   return (
@@ -37,7 +38,7 @@ function RootNavigator() {
       headerStyle: {
         backgroundColor: colors.light.tint,
         shadowOpacity: 0,
-        elevation:0,
+        elevation: 0,
       },
       headerTintColor: colors.light.background,
       headerTitleAlign: 'left',
@@ -65,11 +66,10 @@ function RootNavigator() {
           )
         }}
       />
-      <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
       <Stack.Screen
         name="ChatRoom"
-        component={ChatRoomScreen} 
-        options={({route}) => ({
+        component={ChatRoomScreen}
+        options={({ route }) => ({
           title: route.params.name,
           headerRight: () => (
             <View style={{
@@ -79,12 +79,17 @@ function RootNavigator() {
               justifyContent: 'space-between',
               marginRight: 10,
             }}>
-              <FontAwesome5 name="video" size={22}  color={'white'}/>
-              <MaterialIcons name="call" size={22}  color={'white'}/>
-              <MaterialCommunityIcons name="dots-vertical" size={22}  color={'white'}/>
+              <FontAwesome5 name="video" size={22} color={'white'} />
+              <MaterialIcons name="call" size={22} color={'white'} />
+              <MaterialCommunityIcons name="dots-vertical" size={22} color={'white'} />
             </View>
           )
-         })} />
+        })} />
+      <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
+      <Stack.Screen 
+      name="Contacts"
+       component={ContactsScreen} 
+       options={{ title: 'Contacts' }} />
     </Stack.Navigator>
   );
 }
