@@ -5,7 +5,7 @@ import { View } from '../components/Themed';
 import chatRooms from '../data/ChatRooms'
 import ChatListItem from '../components/ChatListItem'
 import NewMessageButton from '../components/NewMessageButton';
-import { getUser } from '../src/graphql/queries';
+import { getUser } from './queries';
 
 export default function ChatsScreen() {
   useEffect(() => {
@@ -13,6 +13,7 @@ export default function ChatsScreen() {
       try {
         const userInfo = await Auth.currentAuthenticatedUser({ bypassCache: true })
         const userData = await API.graphql(graphqlOperation(getUser, { id: userInfo.attributes.sub }));
+        // console.log(userData);
       } catch (e) {
         console.log(e);
       }
