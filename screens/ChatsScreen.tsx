@@ -13,7 +13,6 @@ export default function ChatsScreen() {
       try {
         const userInfo = await Auth.currentAuthenticatedUser({ bypassCache: true })
         const userData = await API.graphql(graphqlOperation(getUser, { id: userInfo.attributes.sub }));
-        // console.log(userData);
         setChatRooms(userData.data.getUser.chatRoomUser.items)
 
       } catch (e) {

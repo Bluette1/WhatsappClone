@@ -20,7 +20,10 @@ const ContactListItem = (props: ContactListItemProps) => {
     // Navigate to chat room with this user
 
     try {
+
+      //TODO: Create a new chat room only if it doesn't exist 
       // 1. Create a new chat room
+
       const chatRoomData = await API.graphql(
         graphqlOperation(createChatRoom, { input: {} }) 
       );
@@ -47,7 +50,7 @@ const ContactListItem = (props: ContactListItemProps) => {
       ));
       navigation.navigate('ChatRoom', {
         id: newChatRoom.id,
-        name: "Hard coded name",
+        name: user.name,
       });
     } catch (e) {
       console.log(e);
