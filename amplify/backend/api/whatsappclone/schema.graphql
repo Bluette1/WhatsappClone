@@ -17,7 +17,10 @@ type  ChatRoomUser
   chatRoom: ChatRoom @connection(fields: ["chatRoomId"])
 }
 
-type ChatRoom @model {
+type ChatRoom 
+@model 
+@key(name: "byChatRoomUsers", fields: ["chatRoomUsers"], queryField: "chatRoomByUsers"){
+{
   id: ID!
   chatRoomUsers: [ChatRoomUser] @connection(keyName: "byChatRoom", fields: ["id"] )
   messages: [Message] @connection(keyName: "byChatRoom", fields: ["id"] )
