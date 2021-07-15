@@ -16,7 +16,7 @@ const ChatRoomScreen = () => {
       inverted
       >
     </FlatList>
-    <InputBox/>
+    <InputBox chatRoomId={route.params.id} />
     </ImageBackground>
   )
 }
