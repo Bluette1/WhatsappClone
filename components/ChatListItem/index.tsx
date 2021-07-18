@@ -13,6 +13,10 @@ export type ChatListItemProps = {
 const ChatListItem = (props: ChatListItemProps) => {
   const [otherUser, setOtherUser] = useState(null);
   const { chatRoom } = props;
+  // ${chatRoom.lastMessage.user.name}: 
+  if (chatRoom.lastMessage) {
+    console.log('chatRoom.lastMessage.user.name: ', chatRoom.lastMessage);
+  }
 
   const navigation = useNavigation();
   const onClick = () => {
@@ -20,13 +24,19 @@ const ChatListItem = (props: ChatListItemProps) => {
   }
   useEffect(() => {
     const getOtherUser = async () => {
-      const userInfo = await Auth.currentAuthenticatedUser({ bypassCache: true });
-
-    if (chatRoom.chatRoomUsers.items[0].user.id === userInfo.attributes.sub) {
-      setOtherUser(chatRoom.chatRoomUsers.items[1].user);
-    } else {
-      setOtherUser(chatRoom.chatRoomUsers.items[0].user);
-    }
+      try {
+        const userInfo = await Auth.currentAuthenticatedUser({ bypassCache: true });
+  
+      if (chatRoom.chatRoomUsers.items[0].user.id === userInfo.attributes.sub) {
+        setOtherUser(chatRoom.chatRoomUsers.items[1].user);
+      } else {
+        setOtherUser(chatRoom.chatRoomUsers.items[0].user);
+      }
+        
+      } catch (e) {
+        console.log(e);
+      }
+   
     };
     getOtherUser();
   }, []);
@@ -42,10 +52,10 @@ const ChatListItem = (props: ChatListItemProps) => {
       <Image source={{ uri: otherUser.imageUri }} style={styles.avatar} />
         <View style={styles.midContainer}>
           <Text style={styles.username}>{otherUser.name}</Text>
-          <Text numberOflines={2} style={styles.lastMessage}>{chatRoom.lastMessage ? chatRoom.lastMessage.content : ''}</Text>
+          <Text numberOflines={2} style={styles.lastMessage}>{chatRoom.lastMessage ? `${chatRoom.lastMessage.content}` : ''}</Text>
         </View>
       </View>
-      {chatRoom.lastMessage && <Text style={styles.time}>{moment(chatRoom.lastMessage.createdAt).format('DD/MM/YYYY')}</Text>}
+      <Text style={styles.time}>{chatRoom.lastMessage ? moment(chatRoom.lastMessage.updatedAt).format('DD/MM/YYYY') : ''}</Text>
     </View>
     </TouchableWithoutFeedback>
   );
