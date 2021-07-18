@@ -46,6 +46,15 @@ export const createUser = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -83,6 +92,15 @@ export const createUser = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -116,6 +134,15 @@ export const createUser = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -123,6 +150,82 @@ export const createUser = /* GraphQL */ `
                 updatedAt
               }
               nextToken
+            }
+            lastMessageId
+            lastMessage {
+              id
+              content
+              userId
+              chatRoomId
+              user {
+                id
+                name
+                imageUri
+                status
+                chatRoomUser {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              chatRoom {
+                id
+                chatRoomUsers {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                messages {
+                  items {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                lastMessageId
+                lastMessage {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
             }
             createdAt
             updatedAt
@@ -181,6 +284,15 @@ export const updateUser = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -218,6 +330,15 @@ export const updateUser = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -251,6 +372,15 @@ export const updateUser = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -258,6 +388,82 @@ export const updateUser = /* GraphQL */ `
                 updatedAt
               }
               nextToken
+            }
+            lastMessageId
+            lastMessage {
+              id
+              content
+              userId
+              chatRoomId
+              user {
+                id
+                name
+                imageUri
+                status
+                chatRoomUser {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              chatRoom {
+                id
+                chatRoomUsers {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                messages {
+                  items {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                lastMessageId
+                lastMessage {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
             }
             createdAt
             updatedAt
@@ -316,6 +522,15 @@ export const deleteUser = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -353,6 +568,15 @@ export const deleteUser = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -386,6 +610,15 @@ export const deleteUser = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -393,6 +626,82 @@ export const deleteUser = /* GraphQL */ `
                 updatedAt
               }
               nextToken
+            }
+            lastMessageId
+            lastMessage {
+              id
+              content
+              userId
+              chatRoomId
+              user {
+                id
+                name
+                imageUri
+                status
+                chatRoomUser {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              chatRoom {
+                id
+                chatRoomUsers {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                messages {
+                  items {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                lastMessageId
+                lastMessage {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
             }
             createdAt
             updatedAt
@@ -446,6 +755,7 @@ export const createChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -474,6 +784,7 @@ export const createChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -498,6 +809,7 @@ export const createChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -505,6 +817,46 @@ export const createChatRoomUser = /* GraphQL */ `
                   updatedAt
                 }
                 nextToken
+              }
+              lastMessageId
+              lastMessage {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
               }
               createdAt
               updatedAt
@@ -544,6 +896,7 @@ export const createChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -572,6 +925,7 @@ export const createChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -596,6 +950,7 @@ export const createChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -603,6 +958,46 @@ export const createChatRoomUser = /* GraphQL */ `
                   updatedAt
                 }
                 nextToken
+              }
+              lastMessageId
+              lastMessage {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
               }
               createdAt
               updatedAt
@@ -638,6 +1033,7 @@ export const createChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -666,6 +1062,7 @@ export const createChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -690,6 +1087,7 @@ export const createChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -698,6 +1096,46 @@ export const createChatRoomUser = /* GraphQL */ `
                 }
                 nextToken
               }
+              lastMessageId
+              lastMessage {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
               createdAt
               updatedAt
             }
@@ -705,6 +1143,228 @@ export const createChatRoomUser = /* GraphQL */ `
             updatedAt
           }
           nextToken
+        }
+        lastMessageId
+        lastMessage {
+          id
+          content
+          userId
+          chatRoomId
+          user {
+            id
+            name
+            imageUri
+            status
+            chatRoomUser {
+              items {
+                id
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            createdAt
+            updatedAt
+          }
+          chatRoom {
+            id
+            chatRoomUsers {
+              items {
+                id
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            messages {
+              items {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            lastMessageId
+            lastMessage {
+              id
+              content
+              userId
+              chatRoomId
+              user {
+                id
+                name
+                imageUri
+                status
+                chatRoomUser {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              chatRoom {
+                id
+                chatRoomUsers {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                messages {
+                  items {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                lastMessageId
+                lastMessage {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
+            }
+            createdAt
+            updatedAt
+          }
+          createdAt
+          updatedAt
         }
         createdAt
         updatedAt
@@ -753,6 +1413,7 @@ export const updateChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -781,6 +1442,7 @@ export const updateChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -805,6 +1467,7 @@ export const updateChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -812,6 +1475,46 @@ export const updateChatRoomUser = /* GraphQL */ `
                   updatedAt
                 }
                 nextToken
+              }
+              lastMessageId
+              lastMessage {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
               }
               createdAt
               updatedAt
@@ -851,6 +1554,7 @@ export const updateChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -879,6 +1583,7 @@ export const updateChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -903,6 +1608,7 @@ export const updateChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -910,6 +1616,46 @@ export const updateChatRoomUser = /* GraphQL */ `
                   updatedAt
                 }
                 nextToken
+              }
+              lastMessageId
+              lastMessage {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
               }
               createdAt
               updatedAt
@@ -945,6 +1691,7 @@ export const updateChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -973,6 +1720,7 @@ export const updateChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -997,6 +1745,7 @@ export const updateChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -1005,6 +1754,46 @@ export const updateChatRoomUser = /* GraphQL */ `
                 }
                 nextToken
               }
+              lastMessageId
+              lastMessage {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
               createdAt
               updatedAt
             }
@@ -1012,6 +1801,228 @@ export const updateChatRoomUser = /* GraphQL */ `
             updatedAt
           }
           nextToken
+        }
+        lastMessageId
+        lastMessage {
+          id
+          content
+          userId
+          chatRoomId
+          user {
+            id
+            name
+            imageUri
+            status
+            chatRoomUser {
+              items {
+                id
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            createdAt
+            updatedAt
+          }
+          chatRoom {
+            id
+            chatRoomUsers {
+              items {
+                id
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            messages {
+              items {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            lastMessageId
+            lastMessage {
+              id
+              content
+              userId
+              chatRoomId
+              user {
+                id
+                name
+                imageUri
+                status
+                chatRoomUser {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              chatRoom {
+                id
+                chatRoomUsers {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                messages {
+                  items {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                lastMessageId
+                lastMessage {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
+            }
+            createdAt
+            updatedAt
+          }
+          createdAt
+          updatedAt
         }
         createdAt
         updatedAt
@@ -1060,6 +2071,7 @@ export const deleteChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -1088,6 +2100,7 @@ export const deleteChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -1112,6 +2125,7 @@ export const deleteChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -1119,6 +2133,46 @@ export const deleteChatRoomUser = /* GraphQL */ `
                   updatedAt
                 }
                 nextToken
+              }
+              lastMessageId
+              lastMessage {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
               }
               createdAt
               updatedAt
@@ -1158,6 +2212,7 @@ export const deleteChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -1186,6 +2241,7 @@ export const deleteChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -1210,6 +2266,7 @@ export const deleteChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -1217,6 +2274,46 @@ export const deleteChatRoomUser = /* GraphQL */ `
                   updatedAt
                 }
                 nextToken
+              }
+              lastMessageId
+              lastMessage {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
               }
               createdAt
               updatedAt
@@ -1252,6 +2349,7 @@ export const deleteChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -1280,6 +2378,7 @@ export const deleteChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -1304,6 +2403,7 @@ export const deleteChatRoomUser = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -1312,6 +2412,46 @@ export const deleteChatRoomUser = /* GraphQL */ `
                 }
                 nextToken
               }
+              lastMessageId
+              lastMessage {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
               createdAt
               updatedAt
             }
@@ -1319,6 +2459,228 @@ export const deleteChatRoomUser = /* GraphQL */ `
             updatedAt
           }
           nextToken
+        }
+        lastMessageId
+        lastMessage {
+          id
+          content
+          userId
+          chatRoomId
+          user {
+            id
+            name
+            imageUri
+            status
+            chatRoomUser {
+              items {
+                id
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            createdAt
+            updatedAt
+          }
+          chatRoom {
+            id
+            chatRoomUsers {
+              items {
+                id
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            messages {
+              items {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            lastMessageId
+            lastMessage {
+              id
+              content
+              userId
+              chatRoomId
+              user {
+                id
+                name
+                imageUri
+                status
+                chatRoomUser {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              chatRoom {
+                id
+                chatRoomUsers {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                messages {
+                  items {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                lastMessageId
+                lastMessage {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
+            }
+            createdAt
+            updatedAt
+          }
+          createdAt
+          updatedAt
         }
         createdAt
         updatedAt
@@ -1369,6 +2731,15 @@ export const createChatRoom = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -1406,6 +2777,15 @@ export const createChatRoom = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -1439,6 +2819,15 @@ export const createChatRoom = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -1446,6 +2835,82 @@ export const createChatRoom = /* GraphQL */ `
                 updatedAt
               }
               nextToken
+            }
+            lastMessageId
+            lastMessage {
+              id
+              content
+              userId
+              chatRoomId
+              user {
+                id
+                name
+                imageUri
+                status
+                chatRoomUser {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              chatRoom {
+                id
+                chatRoomUsers {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                messages {
+                  items {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                lastMessageId
+                lastMessage {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
             }
             createdAt
             updatedAt
@@ -1490,6 +2955,15 @@ export const createChatRoom = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -1527,6 +3001,15 @@ export const createChatRoom = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -1560,6 +3043,15 @@ export const createChatRoom = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -1568,6 +3060,82 @@ export const createChatRoom = /* GraphQL */ `
               }
               nextToken
             }
+            lastMessageId
+            lastMessage {
+              id
+              content
+              userId
+              chatRoomId
+              user {
+                id
+                name
+                imageUri
+                status
+                chatRoomUser {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              chatRoom {
+                id
+                chatRoomUsers {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                messages {
+                  items {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                lastMessageId
+                lastMessage {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
+            }
             createdAt
             updatedAt
           }
@@ -1575,6 +3143,395 @@ export const createChatRoom = /* GraphQL */ `
           updatedAt
         }
         nextToken
+      }
+      lastMessageId
+      lastMessage {
+        id
+        content
+        userId
+        chatRoomId
+        user {
+          id
+          name
+          imageUri
+          status
+          chatRoomUser {
+            items {
+              id
+              userId
+              chatRoomId
+              user {
+                id
+                name
+                imageUri
+                status
+                chatRoomUser {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              chatRoom {
+                id
+                chatRoomUsers {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                messages {
+                  items {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                lastMessageId
+                lastMessage {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
+            }
+            nextToken
+          }
+          createdAt
+          updatedAt
+        }
+        chatRoom {
+          id
+          chatRoomUsers {
+            items {
+              id
+              userId
+              chatRoomId
+              user {
+                id
+                name
+                imageUri
+                status
+                chatRoomUser {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              chatRoom {
+                id
+                chatRoomUsers {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                messages {
+                  items {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                lastMessageId
+                lastMessage {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
+            }
+            nextToken
+          }
+          messages {
+            items {
+              id
+              content
+              userId
+              chatRoomId
+              user {
+                id
+                name
+                imageUri
+                status
+                chatRoomUser {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              chatRoom {
+                id
+                chatRoomUsers {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                messages {
+                  items {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                lastMessageId
+                lastMessage {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
+            }
+            nextToken
+          }
+          lastMessageId
+          lastMessage {
+            id
+            content
+            userId
+            chatRoomId
+            user {
+              id
+              name
+              imageUri
+              status
+              chatRoomUser {
+                items {
+                  id
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                nextToken
+              }
+              createdAt
+              updatedAt
+            }
+            chatRoom {
+              id
+              chatRoomUsers {
+                items {
+                  id
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                nextToken
+              }
+              messages {
+                items {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                nextToken
+              }
+              lastMessageId
+              lastMessage {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
+            }
+            createdAt
+            updatedAt
+          }
+          createdAt
+          updatedAt
+        }
+        createdAt
+        updatedAt
       }
       createdAt
       updatedAt
@@ -1622,6 +3579,15 @@ export const updateChatRoom = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -1659,6 +3625,15 @@ export const updateChatRoom = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -1692,6 +3667,15 @@ export const updateChatRoom = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -1699,6 +3683,82 @@ export const updateChatRoom = /* GraphQL */ `
                 updatedAt
               }
               nextToken
+            }
+            lastMessageId
+            lastMessage {
+              id
+              content
+              userId
+              chatRoomId
+              user {
+                id
+                name
+                imageUri
+                status
+                chatRoomUser {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              chatRoom {
+                id
+                chatRoomUsers {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                messages {
+                  items {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                lastMessageId
+                lastMessage {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
             }
             createdAt
             updatedAt
@@ -1743,6 +3803,15 @@ export const updateChatRoom = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -1780,6 +3849,15 @@ export const updateChatRoom = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -1813,6 +3891,15 @@ export const updateChatRoom = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -1821,6 +3908,82 @@ export const updateChatRoom = /* GraphQL */ `
               }
               nextToken
             }
+            lastMessageId
+            lastMessage {
+              id
+              content
+              userId
+              chatRoomId
+              user {
+                id
+                name
+                imageUri
+                status
+                chatRoomUser {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              chatRoom {
+                id
+                chatRoomUsers {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                messages {
+                  items {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                lastMessageId
+                lastMessage {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
+            }
             createdAt
             updatedAt
           }
@@ -1828,6 +3991,395 @@ export const updateChatRoom = /* GraphQL */ `
           updatedAt
         }
         nextToken
+      }
+      lastMessageId
+      lastMessage {
+        id
+        content
+        userId
+        chatRoomId
+        user {
+          id
+          name
+          imageUri
+          status
+          chatRoomUser {
+            items {
+              id
+              userId
+              chatRoomId
+              user {
+                id
+                name
+                imageUri
+                status
+                chatRoomUser {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              chatRoom {
+                id
+                chatRoomUsers {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                messages {
+                  items {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                lastMessageId
+                lastMessage {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
+            }
+            nextToken
+          }
+          createdAt
+          updatedAt
+        }
+        chatRoom {
+          id
+          chatRoomUsers {
+            items {
+              id
+              userId
+              chatRoomId
+              user {
+                id
+                name
+                imageUri
+                status
+                chatRoomUser {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              chatRoom {
+                id
+                chatRoomUsers {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                messages {
+                  items {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                lastMessageId
+                lastMessage {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
+            }
+            nextToken
+          }
+          messages {
+            items {
+              id
+              content
+              userId
+              chatRoomId
+              user {
+                id
+                name
+                imageUri
+                status
+                chatRoomUser {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              chatRoom {
+                id
+                chatRoomUsers {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                messages {
+                  items {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                lastMessageId
+                lastMessage {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
+            }
+            nextToken
+          }
+          lastMessageId
+          lastMessage {
+            id
+            content
+            userId
+            chatRoomId
+            user {
+              id
+              name
+              imageUri
+              status
+              chatRoomUser {
+                items {
+                  id
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                nextToken
+              }
+              createdAt
+              updatedAt
+            }
+            chatRoom {
+              id
+              chatRoomUsers {
+                items {
+                  id
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                nextToken
+              }
+              messages {
+                items {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                nextToken
+              }
+              lastMessageId
+              lastMessage {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
+            }
+            createdAt
+            updatedAt
+          }
+          createdAt
+          updatedAt
+        }
+        createdAt
+        updatedAt
       }
       createdAt
       updatedAt
@@ -1875,6 +4427,15 @@ export const deleteChatRoom = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -1912,6 +4473,15 @@ export const deleteChatRoom = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -1945,6 +4515,15 @@ export const deleteChatRoom = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -1952,6 +4531,82 @@ export const deleteChatRoom = /* GraphQL */ `
                 updatedAt
               }
               nextToken
+            }
+            lastMessageId
+            lastMessage {
+              id
+              content
+              userId
+              chatRoomId
+              user {
+                id
+                name
+                imageUri
+                status
+                chatRoomUser {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              chatRoom {
+                id
+                chatRoomUsers {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                messages {
+                  items {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                lastMessageId
+                lastMessage {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
             }
             createdAt
             updatedAt
@@ -1996,6 +4651,15 @@ export const deleteChatRoom = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -2033,6 +4697,15 @@ export const deleteChatRoom = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -2066,6 +4739,15 @@ export const deleteChatRoom = /* GraphQL */ `
                   messages {
                     nextToken
                   }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
                   createdAt
                   updatedAt
                 }
@@ -2074,6 +4756,82 @@ export const deleteChatRoom = /* GraphQL */ `
               }
               nextToken
             }
+            lastMessageId
+            lastMessage {
+              id
+              content
+              userId
+              chatRoomId
+              user {
+                id
+                name
+                imageUri
+                status
+                chatRoomUser {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              chatRoom {
+                id
+                chatRoomUsers {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                messages {
+                  items {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                lastMessageId
+                lastMessage {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
+            }
             createdAt
             updatedAt
           }
@@ -2081,6 +4839,395 @@ export const deleteChatRoom = /* GraphQL */ `
           updatedAt
         }
         nextToken
+      }
+      lastMessageId
+      lastMessage {
+        id
+        content
+        userId
+        chatRoomId
+        user {
+          id
+          name
+          imageUri
+          status
+          chatRoomUser {
+            items {
+              id
+              userId
+              chatRoomId
+              user {
+                id
+                name
+                imageUri
+                status
+                chatRoomUser {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              chatRoom {
+                id
+                chatRoomUsers {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                messages {
+                  items {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                lastMessageId
+                lastMessage {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
+            }
+            nextToken
+          }
+          createdAt
+          updatedAt
+        }
+        chatRoom {
+          id
+          chatRoomUsers {
+            items {
+              id
+              userId
+              chatRoomId
+              user {
+                id
+                name
+                imageUri
+                status
+                chatRoomUser {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              chatRoom {
+                id
+                chatRoomUsers {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                messages {
+                  items {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                lastMessageId
+                lastMessage {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
+            }
+            nextToken
+          }
+          messages {
+            items {
+              id
+              content
+              userId
+              chatRoomId
+              user {
+                id
+                name
+                imageUri
+                status
+                chatRoomUser {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              chatRoom {
+                id
+                chatRoomUsers {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                messages {
+                  items {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                lastMessageId
+                lastMessage {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
+            }
+            nextToken
+          }
+          lastMessageId
+          lastMessage {
+            id
+            content
+            userId
+            chatRoomId
+            user {
+              id
+              name
+              imageUri
+              status
+              chatRoomUser {
+                items {
+                  id
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                nextToken
+              }
+              createdAt
+              updatedAt
+            }
+            chatRoom {
+              id
+              chatRoomUsers {
+                items {
+                  id
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                nextToken
+              }
+              messages {
+                items {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                nextToken
+              }
+              lastMessageId
+              lastMessage {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
+            }
+            createdAt
+            updatedAt
+          }
+          createdAt
+          updatedAt
+        }
+        createdAt
+        updatedAt
       }
       createdAt
       updatedAt
@@ -2127,6 +5274,7 @@ export const createMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2155,6 +5303,7 @@ export const createMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2179,6 +5328,7 @@ export const createMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2186,6 +5336,46 @@ export const createMessage = /* GraphQL */ `
                   updatedAt
                 }
                 nextToken
+              }
+              lastMessageId
+              lastMessage {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
               }
               createdAt
               updatedAt
@@ -2225,6 +5415,7 @@ export const createMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2253,6 +5444,7 @@ export const createMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2277,6 +5469,7 @@ export const createMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2284,6 +5477,46 @@ export const createMessage = /* GraphQL */ `
                   updatedAt
                 }
                 nextToken
+              }
+              lastMessageId
+              lastMessage {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
               }
               createdAt
               updatedAt
@@ -2319,6 +5552,7 @@ export const createMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2347,6 +5581,7 @@ export const createMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2371,6 +5606,7 @@ export const createMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2379,6 +5615,46 @@ export const createMessage = /* GraphQL */ `
                 }
                 nextToken
               }
+              lastMessageId
+              lastMessage {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
               createdAt
               updatedAt
             }
@@ -2386,6 +5662,228 @@ export const createMessage = /* GraphQL */ `
             updatedAt
           }
           nextToken
+        }
+        lastMessageId
+        lastMessage {
+          id
+          content
+          userId
+          chatRoomId
+          user {
+            id
+            name
+            imageUri
+            status
+            chatRoomUser {
+              items {
+                id
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            createdAt
+            updatedAt
+          }
+          chatRoom {
+            id
+            chatRoomUsers {
+              items {
+                id
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            messages {
+              items {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            lastMessageId
+            lastMessage {
+              id
+              content
+              userId
+              chatRoomId
+              user {
+                id
+                name
+                imageUri
+                status
+                chatRoomUser {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              chatRoom {
+                id
+                chatRoomUsers {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                messages {
+                  items {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                lastMessageId
+                lastMessage {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
+            }
+            createdAt
+            updatedAt
+          }
+          createdAt
+          updatedAt
         }
         createdAt
         updatedAt
@@ -2435,6 +5933,7 @@ export const updateMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2463,6 +5962,7 @@ export const updateMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2487,6 +5987,7 @@ export const updateMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2494,6 +5995,46 @@ export const updateMessage = /* GraphQL */ `
                   updatedAt
                 }
                 nextToken
+              }
+              lastMessageId
+              lastMessage {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
               }
               createdAt
               updatedAt
@@ -2533,6 +6074,7 @@ export const updateMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2561,6 +6103,7 @@ export const updateMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2585,6 +6128,7 @@ export const updateMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2592,6 +6136,46 @@ export const updateMessage = /* GraphQL */ `
                   updatedAt
                 }
                 nextToken
+              }
+              lastMessageId
+              lastMessage {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
               }
               createdAt
               updatedAt
@@ -2627,6 +6211,7 @@ export const updateMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2655,6 +6240,7 @@ export const updateMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2679,6 +6265,7 @@ export const updateMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2687,6 +6274,46 @@ export const updateMessage = /* GraphQL */ `
                 }
                 nextToken
               }
+              lastMessageId
+              lastMessage {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
               createdAt
               updatedAt
             }
@@ -2694,6 +6321,228 @@ export const updateMessage = /* GraphQL */ `
             updatedAt
           }
           nextToken
+        }
+        lastMessageId
+        lastMessage {
+          id
+          content
+          userId
+          chatRoomId
+          user {
+            id
+            name
+            imageUri
+            status
+            chatRoomUser {
+              items {
+                id
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            createdAt
+            updatedAt
+          }
+          chatRoom {
+            id
+            chatRoomUsers {
+              items {
+                id
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            messages {
+              items {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            lastMessageId
+            lastMessage {
+              id
+              content
+              userId
+              chatRoomId
+              user {
+                id
+                name
+                imageUri
+                status
+                chatRoomUser {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              chatRoom {
+                id
+                chatRoomUsers {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                messages {
+                  items {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                lastMessageId
+                lastMessage {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
+            }
+            createdAt
+            updatedAt
+          }
+          createdAt
+          updatedAt
         }
         createdAt
         updatedAt
@@ -2743,6 +6592,7 @@ export const deleteMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2771,6 +6621,7 @@ export const deleteMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2795,6 +6646,7 @@ export const deleteMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2802,6 +6654,46 @@ export const deleteMessage = /* GraphQL */ `
                   updatedAt
                 }
                 nextToken
+              }
+              lastMessageId
+              lastMessage {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
               }
               createdAt
               updatedAt
@@ -2841,6 +6733,7 @@ export const deleteMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2869,6 +6762,7 @@ export const deleteMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2893,6 +6787,7 @@ export const deleteMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2900,6 +6795,46 @@ export const deleteMessage = /* GraphQL */ `
                   updatedAt
                 }
                 nextToken
+              }
+              lastMessageId
+              lastMessage {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
               }
               createdAt
               updatedAt
@@ -2935,6 +6870,7 @@ export const deleteMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2963,6 +6899,7 @@ export const deleteMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2987,6 +6924,7 @@ export const deleteMessage = /* GraphQL */ `
                   }
                   chatRoom {
                     id
+                    lastMessageId
                     createdAt
                     updatedAt
                   }
@@ -2995,6 +6933,46 @@ export const deleteMessage = /* GraphQL */ `
                 }
                 nextToken
               }
+              lastMessageId
+              lastMessage {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
               createdAt
               updatedAt
             }
@@ -3002,6 +6980,228 @@ export const deleteMessage = /* GraphQL */ `
             updatedAt
           }
           nextToken
+        }
+        lastMessageId
+        lastMessage {
+          id
+          content
+          userId
+          chatRoomId
+          user {
+            id
+            name
+            imageUri
+            status
+            chatRoomUser {
+              items {
+                id
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            createdAt
+            updatedAt
+          }
+          chatRoom {
+            id
+            chatRoomUsers {
+              items {
+                id
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            messages {
+              items {
+                id
+                content
+                userId
+                chatRoomId
+                user {
+                  id
+                  name
+                  imageUri
+                  status
+                  chatRoomUser {
+                    nextToken
+                  }
+                  createdAt
+                  updatedAt
+                }
+                chatRoom {
+                  id
+                  chatRoomUsers {
+                    nextToken
+                  }
+                  messages {
+                    nextToken
+                  }
+                  lastMessageId
+                  lastMessage {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              nextToken
+            }
+            lastMessageId
+            lastMessage {
+              id
+              content
+              userId
+              chatRoomId
+              user {
+                id
+                name
+                imageUri
+                status
+                chatRoomUser {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                createdAt
+                updatedAt
+              }
+              chatRoom {
+                id
+                chatRoomUsers {
+                  items {
+                    id
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                messages {
+                  items {
+                    id
+                    content
+                    userId
+                    chatRoomId
+                    createdAt
+                    updatedAt
+                  }
+                  nextToken
+                }
+                lastMessageId
+                lastMessage {
+                  id
+                  content
+                  userId
+                  chatRoomId
+                  user {
+                    id
+                    name
+                    imageUri
+                    status
+                    createdAt
+                    updatedAt
+                  }
+                  chatRoom {
+                    id
+                    lastMessageId
+                    createdAt
+                    updatedAt
+                  }
+                  createdAt
+                  updatedAt
+                }
+                createdAt
+                updatedAt
+              }
+              createdAt
+              updatedAt
+            }
+            createdAt
+            updatedAt
+          }
+          createdAt
+          updatedAt
         }
         createdAt
         updatedAt
