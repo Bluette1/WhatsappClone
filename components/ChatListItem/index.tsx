@@ -13,11 +13,7 @@ export type ChatListItemProps = {
 const ChatListItem = (props: ChatListItemProps) => {
   const [otherUser, setOtherUser] = useState(null);
   const { chatRoom } = props;
-  // ${chatRoom.lastMessage.user.name}: 
-  if (chatRoom.lastMessage) {
-    console.log('chatRoom.lastMessage.user.name: ', chatRoom.lastMessage);
-  }
-
+  
   const navigation = useNavigation();
   const onClick = () => {
     navigation.navigate('ChatRoom', {id: chatRoom.id, name: otherUser.name});
@@ -52,7 +48,7 @@ const ChatListItem = (props: ChatListItemProps) => {
       <Image source={{ uri: otherUser.imageUri }} style={styles.avatar} />
         <View style={styles.midContainer}>
           <Text style={styles.username}>{otherUser.name}</Text>
-          <Text numberOflines={2} style={styles.lastMessage}>{chatRoom.lastMessage ? `${chatRoom.lastMessage.content}` : ''}</Text>
+          <Text numberOflines={2} style={styles.lastMessage}>{chatRoom.lastMessage ? `${chatRoom.lastMessage.user.name}: ${chatRoom.lastMessage.content}` : ''}</Text>
         </View>
       </View>
       <Text style={styles.time}>{chatRoom.lastMessage ? moment(chatRoom.lastMessage.updatedAt).format('DD/MM/YYYY') : ''}</Text>

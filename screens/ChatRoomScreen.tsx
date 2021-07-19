@@ -3,12 +3,15 @@ import { Text, FlatList, ImageBackground } from 'react-native';
 import { useRoute } from '@react-navigation/native';
 import { Auth, API, graphqlOperation } from 'aws-amplify';
 import {messagesByChatRoom} from '../src/graphql/queries';
+import {onCreateMessage} from '../src/graphql/subscriptions';
+
 import ChatMessage from '../components/ChatMessage';
 import {BG} from '../assets/images/BG.png';
 import InputBox from '../components/InputBox';
+import { Message } from '../types';
 
 const ChatRoomScreen = () => {
-  const [messages, setMessages] = useState(null);
+  const [messages, setMessages] = useState([]);
   const [myId, setMyId] = useState(null);
   const route = useRoute();
   useEffect(() => {
@@ -36,8 +39,33 @@ const ChatRoomScreen = () => {
     fetchUser();
 
   }, []);
+  const addMessageToState = (newMessage) => {
+    setMessages([newMessage, ...messages])
+  }
 
-  if (!messages) {
+  useEffect(() => { //subscriptions are synchronous
+    try {
+      const subscription = API.graphql(
+        graphqlOperation(onCreateMessage)
+      ).subscribe({
+        next: (data) => {
+          console.log(data)
+          const newMessage = data.value.data.onCreateMessage;
+          if (newMessage.chatRoomId !== route.params.id) {
+            return;
+          }
+          addMessageToState(newMessage);
+        }
+      })
+      return () => subscription.unsubscribe();
+      
+    } catch (e) {
+      console.log(e)
+    }
+    
+  }, []);
+
+  if (messages.length === 0) {
     return null;
   }
 
