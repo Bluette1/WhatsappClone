@@ -1,4 +1,4 @@
-### star-wars-info
+### WhatsappClone
 
 This project is a real-time chat application based on the whatsapp design, built using AWS Amplify and React-Native.
 
@@ -21,6 +21,7 @@ This project is a real-time chat application based on the whatsapp design, built
 Clone the git repo.
 
 - To start the client, open the terminal and inside the project root folder type the following 
+- Connect simulator/mobile device; follow instructions to download and install [Expo Go client](https://expo.io/client).
 ```
 yarn install
 yarn start
